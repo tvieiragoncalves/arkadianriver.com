@@ -1,7 +1,7 @@
 ---
 priority: 0.6
-title: Project X
-excerpt: An example of a and b
+title: Instalações
+excerpt: Internamento Psiquiátrico
 categories: works
 background-image: works-sample.png
 tags:

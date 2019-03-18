@@ -11,8 +11,9 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: _site name_
-description: _description_
+title: Clínica de Saúde Psiquiátrica de Coimbra
+description: Casa da Oliveira
+
 owner:
   name: _your name_ # or company name
   url: "http://example.com" # your URL
@@ -28,8 +29,8 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: _Your greeting_  
-  text: _Your detailed greeting text_
+  title: Clínica de Internamento Psiquiátrico
+  text: A Casa da Oliveira é a concretização de um projeto de quatro profissionais de saúde mental com largos anos de experiência em contexto de internamento psiquiátrico. Situada em Coimbra, numa vila a 3 minutos da zona centro da cidade, proporciona um ambiente calmo e agradável aos utentes.
 # - displayed at the bottom
 closing-head: _Your closing_
 closing-para: _Your detailed closing_
