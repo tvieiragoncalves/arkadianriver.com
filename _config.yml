@@ -15,7 +15,7 @@ title: Clínica de Saúde Psiquiátrica de Coimbra
 description: Casa da Oliveira
 
 owner:
-  name: _your name_ # or company name
+  name: Casa da Oliveira # or company name
   url: "http://example.com" # your URL
 first_published: 2010 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
