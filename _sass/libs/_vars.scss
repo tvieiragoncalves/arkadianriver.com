@@ -91,6 +91,7 @@
 		accent1: (
 			bg:				rgba(0, 255, 0, 0.25),
 			fg-bold:		#ffffff,
+			cordomenu:			rgba(0, 0, 0, 0.1),
 			fg:				mix(#21b2a6, #ffffff, 25%),
 			fg-light:		mix(#21b2a6, #ffffff, 40%),
 			border:			rgba(0,0,0,0.125),
@@ -111,7 +112,7 @@
 		),
 
 		accent3: (
-			bg:				#00f0ff,
+			bg:				#2e3842,
 			fg-bold:		#ffffff,
 			fg:				mix(#00f0ff, #ffffff, 25%),
 			fg-light:		mix(#00f0ff, #ffffff, 40%),
