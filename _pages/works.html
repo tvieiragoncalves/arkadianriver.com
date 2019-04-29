@@ -6,9 +6,58 @@ excerpt: Projectos em desenvolvimento
 image: pic02.jpg
 layout: post
 ---
+<style>
+body {
+  padding: 2em;
+  font: 1em/1.5 'Open Sans', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font: .9em 'Berkshire Swash', cursive;
+  text-align: center;
+}
+
+blockquote {
+  font: 1.5em 'Berkshire Swash', cursive;
+  margin: 0;
+  column-span: all;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+}
+
+.container article {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 1px solid #ccc;
+}
+
+.container aside {
+  border-left: 1px solid #ccc;
+  padding: 0 1em;
+}</style>
+
 
 <section>
   <header>
+    <div class="container">
+      <article>
     <h2 id="filosofia">Filosofia</h2>
 
   <p>A Casa da Oliveira é um novo conceito de abordagem ao tratamento e recuperação de pessoas com perturbações do foro mental, em situação aguda ou crónica.
@@ -16,9 +65,9 @@ layout: post
   Focamos a nossa intervenção na pessoa, na individualidade de cada um e no planeamento específico e adaptado visando o objetivo comum de alcançar estabilidade psíquica, a reabilitação e posterior reintegração psicossocial, através da definição e motivação para um projeto pessoal abrangente, a nível escolar/académico, profissional, físico, artístico e lúdico.
   A componente do internamento, em ambiente sob desígnio de ambiente familiar, continente e protetor, com espaços aprazíveis, que conjugados com metodologias de intervenção especializadas e inovadoras, visam obter resultados mais eficazes e mais eficientes. </p>
 
-  <h2 id="oquenosdistingue">O que nos distingue</h2>
+  <h2 id="O que nos destingue">O que nos destingue</h2>
 
-  <p>Na Casa da Oliveira, cada utente tem associado um projeto de intervenção único, que integra uma abordagem multidisciplinar, nomeadamente psicoterapia, psiquiatria, enfermagem especializada em saúde mental, atividades físicas, artísticas e lúdicas.
+    <p>Na Casa da Oliveira, cada utente tem associado um projeto de intervenção único, que integra uma abordagem multidisciplinar, nomeadamente psicoterapia, psiquiatria, enfermagem especializada em saúde mental, atividades físicas, artísticas e lúdicas.
   A dinâmica comunitária conseguida pela inserção num internamento que visa equipar-se ao meio ambiente familiar proporciona a obtenção de resultados mais duradouros e eficazes na estabilização psíquica de cada utente e do grupo.
   Na Casa da Oliveira estão presentes técnicos 24 horas por dia, sete .
   Dispomos de serviço de lavandaria, alimentação cuidada e adequada, limpeza integral do espaço, tudo isto ao cuidado de auxiliares de serviços gerais devidamente capacitados sendo que estes serviços estão todos incluídos nos honorários de cada utente.
@@ -34,11 +83,27 @@ layout: post
   A Casa da Oliveira conta com uma equipa multidisciplinar constituída por Psicólogos Clínicos, Médicos Psiquiatras, Enfermeiros Especialistas em Saúde Mental e outros profissionais da área Psicossocial cujo objetivo comum visa a estabilização do quadro clínico, reeducação e reintegração social do utente. </p>
 
   <p>*carece de avaliação clínica.</p>
+</article>
+
+<aside>
+ <figure>
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/gertrude-bacon.jpg" alt="3 people in Victorian clothes in a balloon">
+   <figcaption>The Authoress, her Father and Mr. Spencer making an ascent</figcaption>
+ </figure>
+
+ <p>The text and images in these examples has been taken from the book, "Balloons, Airships, and Flying Machines" by Gertrude Bacon as published on <a href="http://www.gutenberg.org/files/54799/54799-h/54799-h.htm">Project Gutenberg</a>.</p>
+
+ <figure>
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hydrogen-balloon.jpg" alt="an old print of a balloon">
+   <figcaption>An Early Hydrogen Balloon</figcaption>
+ </figure>
+</aside>
+ </div>
 
 
-  {%
-  include 3016-02-28-icons.html
-%}
+
+
+
 {%
 if site.social.linkedin-square %}
 <div class="table-wrapper">

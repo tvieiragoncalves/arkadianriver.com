@@ -74,6 +74,14 @@
               <div class="content">
                 <h2>{{ my_page.title }}</h2>
                 <p>{{ my_page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</p>
+                <div id="container">
+                  <button class="learn-more">
+                    <div class="circle">
+                      <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text">Saiba mais</p>
+                  </button>
+                </div>
               </div>
               </a></div>
             </section>{%
