@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
-lang: pt-pt # used in HTML lang attributes
+lang: pt # used in HTML lang attributes
 
 # on landing page
 # - set the greeting only if you want to display the first green section
