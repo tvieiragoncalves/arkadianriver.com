@@ -1,0 +1,127 @@
+---
+layout: default
+---
+  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
+    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}"><style>
+      @media only screen and (orientation: landscape) {
+      #cell-1,
+      #cell-4,
+      #cell-7 {
+        width: 33%;
+        float: left;
+      }
+      #cell-3,
+      #cell-6,
+      #cell-9 {
+        width: 33%;
+        float: right;
+      }
+      #cell-2,
+      #cell-5,
+      #cell-8 {
+        width: 33%;
+        float: left;
+      }
+    }
+
+    .grid {
+      border: 1px solid rgba(0, 0, 0, 0);
+      text-align: center;
+      min-height: 100px;
+      padding: 20px 0px 10px 0px;
+    }
+
+    .lnr {
+      font-size: 4em;
+      /*text-shadow: 2px 1px rgba(107,171,229,1);*/
+      font-weight: normal;
+    }
+
+    .lnr:hover {
+      text-shadow: 1px 1px rgba(107, 171, 229, 0.8);
+      transition: all ease 0.2s;
+    }
+
+    .grid h2 {
+      font-family: 'Muli', sans-serif;
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+
+    .grid p {
+      font-family: 'Muli', sans-serif;
+      font-weight: 300;
+      font-size: 0.9em;
+      padding:0 5px 0 5px;
+
+    }
+
+    #icon-grid {
+      height:relative;
+      width:100%;
+    }
+    </style>
+    <head>
+      <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+      <!-- Cheat Sheet: https://linearicons.com/free#cheatsheet -->
+
+      <link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+    </head>
+
+
+    <div id="icon-grid">
+      <div class="grid" id="cell-1">
+        <span class="lnr lnr-users" style="color:#0054a6;"></span>
+        <h2>Designing Brands</h2>
+         <p>I develop websites that engage users and guide them to taking action.</p>
+      </div>
+      <div class="grid" id="cell-2">
+        <span class="lnr lnr-laptop-phone" style="color:#003471;"></span>
+        <h2>Building Interfaces</h2>
+        <p>I develop websites that engage users and guide them to taking action.</p>
+      </div>
+      <div class="grid" id="cell-3">
+        <span class="lnr lnr-pie-chart" style="color:#0054a6;"></span>
+        <h2>Conducting Research</h2>
+        <p>A short explanation about the thing being discussed.</p>
+      </div>
+      <div class="grid" id="cell-3">
+        <span class="lnr lnr-pie-chart" style="color:#0054a6;"></span>
+        <h2>Conducting Research</h2>
+        <p>A short explanation about the thing being discussed.</p>
+      </div>
+      <div class="grid" id="cell-3">
+        <span class="lnr lnr-pie-chart" style="color:#0054a6;"></span>
+        <h2>Conducting Research</h2>
+        <p>A short explanation about the thing being discussed.</p>
+      </div>
+      <div class="grid" id="cell-3">
+        <span class="lnr lnr-pie-chart" style="color:#0054a6;"></span>
+        <h2>Conducting Research</h2>
+        <p>A short explanation about the thing being discussed.</p>
+      </div>
+    </div>
+
+      {{ content }}{%
+
+
+      if sorted_list
+%}{%    if site.navlinks == 'bottom' or site.navlinks == 'both'
+%}{%      unless perma
+%}{%        assign perma = '/topics/' | prepend: site.baseurl
+%}{%      endunless
+%}{%      include fn_sortednav.html posclass='btnbottom'
+%}{%    endif
+%}{%  endif
+%}{%  unless page.author == 'none'
+%}{%    include author-block.html %}
+  {%  endunless
+%}{%  if jekyll.environment == "production"
+%}{%    unless page.options contains nocomment or page.categories contains 'works'
+%}{%      include disqus.html %}
+  {%    endunless
+%}{%  endif
+%}
+    </div>
+  </section>
