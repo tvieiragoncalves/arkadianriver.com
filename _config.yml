@@ -11,8 +11,8 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: Clínica de Saúde Psiquiátrica de Coimbra
-description: Casa da Oliveira
+title: Casa da Oliveira
+description: Clínica de Saúde Psiquiátrica de Coimbra
 
 owner:
   name: Casa da Oliveira # or company name
